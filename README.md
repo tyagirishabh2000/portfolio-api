@@ -64,7 +64,7 @@ spring.jpa.show-sql=true
 
 Running the Application
 Clone the repository:
-git clone https://github.com/YOUR_USERNAME/portfolio-api.git
+git clone https://github.com/tyagirishabh2000/portfolio-api.git
 cd portfolio-api
 Run the app:
 ./mvnw spring-boot:run
