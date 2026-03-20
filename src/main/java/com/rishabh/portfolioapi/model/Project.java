@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Project {
@@ -12,10 +13,19 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "Title is required")
     private String title;
+
+    @NotBlank(message = "Description is required")
     private String description;
+
+    @NotBlank(message = "Technologies are required")
     private String technologies;
+
+    @NotBlank(message = "GitHub link is required")
     private String githubLink;
+
+    @NotBlank(message = "Live demo link is required")
     private String liveDemoLink;
 
     public Project() {
